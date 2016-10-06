@@ -28,33 +28,33 @@ def handleKey(inp, key):
     if inp == 'R' + key:
         device.emit(getattr(uinput, keyName), 0)
 
-def handleDirection(inp, direction )
-    if inp == Jl:
+def handleDirection(inp):
+    if inp == 'Jl':
         device.emit(uinput.KEY_LEFT, 1)
-    if inp == Jr:
+    if inp == 'Jr':
         device.emit(uinput.KEY_RIGHT, 1)
-    if inp == Ju:
+    if inp == 'Ju':
         device.emit(uinput.KEY_UP, 1)
-    if inp == Jd:
+    if inp == 'Jd':
         device.emit(uinput.KEY_DOWN, 1)
 
-    if inp == Jlu:
+    if inp == 'Jlu':
         device.emit(uinput.KEY_LEFT, 1)
         device.emit(uinput.KEY_UP, 1)
-    if inp == Jld:
+    if inp == 'Jld':
         device.emit(uinput.KEY_LEFT, 1)
         device.emit(uinput.KEY_DOWN, 1)
-    if inp == Jrd:
+    if inp == 'Jrd':
         device.emit(uinput.KEY_RIGHT, 1)
         device.emit(uinput.KEY_DOWN, 1)
-    if inp == Jru:
+    if inp == 'Jru':
         device.emit(uinput.KEY_RIGHT, 1)
         device.emit(uinput.KEY_UP, 1)
 
-    if line == 'J0':
+    if inp == 'J0':
         resetDirection()
 
-def resetDirection()
+def resetDirection():
      device.emit(uinput.KEY_DOWN, 0)
      device.emit(uinput.KEY_UP, 0)
      device.emit(uinput.KEY_LEFT, 0)
@@ -74,6 +74,3 @@ while True:
     handleKey(line, 'j')
 
     handleDirection(line)
-
-
-
