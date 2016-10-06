@@ -11,7 +11,7 @@ emulate a keyboard to make the gamepad usabel under linux.
     sudo pip install python-uinput
     sudo pip install pyserial
 
-# Execute
+## Execute
 Run `sudo python gamepad.py` form the commandline.
 If you want to use the joystick you need to run it on startup.
 See `/etc/rc.local`.
