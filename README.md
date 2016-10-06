@@ -2,7 +2,7 @@
 
 # Introduction
 
-You have to install the corresponding sketch on your Arduino UNO or compatible.
+You have to install the [corresponding sketch](https://github.com/thomas-rager/serial-arduino-gamepad) on your Arduino UNO or compatible.
 The Arduino will send all keypresses over the serial-interface and this script will
 emulate a keyboard to make the gamepad usabel under linux.
 
