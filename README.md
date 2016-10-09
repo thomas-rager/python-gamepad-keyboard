@@ -16,6 +16,8 @@ Run `sudo python gamepad.py` form the commandline.
 If you want to use the joystick you need to run it on startup.
 See `/etc/rc.local`.
 
+You may have to adapt the serial-interface in line 4 of `gamepad.py` to your needs.  
+
 ---
 
 Author: Thomas Rager
